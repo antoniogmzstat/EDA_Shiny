@@ -8,12 +8,12 @@
 #
 
 library(shiny)
+setwd("~/Proyectos_Shiny/EDA_Shiny")
 
+server_functions <- list.files("./App/server_functions/", full.names = TRUE, recursive = TRUE)
 # Define server logic required to draw a histogram
-shinyServer(function(input, output) {
-    
-        output$outputText <- renderText({
-            input$text
-        })
+shinyServer(function(input, output, session) {
+
+source(server_functions, local = TRUE)
 
 })

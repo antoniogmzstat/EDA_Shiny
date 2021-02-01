@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(shinyFiles)
 setwd("~/Proyectos_Shiny/EDA_Shiny")
 source("./App/ui_elements/ui_configPanel.R", local = TRUE)
 source("./App/ui_elements/ui_resultsPanel.R")
